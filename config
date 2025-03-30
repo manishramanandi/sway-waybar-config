@@ -1,0 +1,53 @@
+{
+  "layer": "top",
+  "height": 28,
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["window"],
+  "modules-right": ["tray", "network", "memory", "cpu", "battery", "pulseaudio", "clock"],
+
+  "sway/workspaces": {
+    "format": "{name}",
+    "on-click": "swaymsg workspace {name}"
+  },
+
+  "window": {
+    "format": "{title}"
+  },
+
+  "tray": {
+    "icon-size": 20,
+    "spacing": 5
+  },
+
+  "network": {
+    "format": " {essid}",
+    "format-disconnected": "Disconnected"
+  },
+
+  "memory": {
+    "format": "RAM {percentage}%",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "format": " {usage}%"
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-full": "  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-discharging": "  {capacity}%"
+  },
+
+  "pulseaudio": {
+    "format": " {volume}%",
+    "format-muted": " Muted"
+  },
+
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "tooltip-format": "{:%Y-%m-%d %H:%M:%S}"
+  }
+}
+
