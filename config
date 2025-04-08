@@ -33,12 +33,14 @@
     "format": " {usage}%"
   },
 
-  "battery": {
-    "format": "{capacity}% {icon}",
-    "format-full": "  {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-discharging": "  {capacity}%"
-  },
+ "battery": {
+  "format": "{icon} {capacity}% ",
+  "format-full": "  {capacity}%",
+  "format-charging": "  {capacity}%",
+  "format-discharging": "{icon} {capacity}%",
+  "format-icons": ["", "", "", "", ""]
+},
+
 
   "pulseaudio": {
     "format": " {volume}%",
@@ -50,4 +52,3 @@
     "tooltip-format": "{:%Y-%m-%d %H:%M:%S}"
   }
 }
-
